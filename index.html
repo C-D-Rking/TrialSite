@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3</title>
+</head>
+<body>
+    <form id="registerForm">
+        <h1 class="Top">User Registeration</h1>
+        <input type="text" id="username" placeholder="Enter username" required>
+        <input type="email" id="email" placeholder="Enter email" required>
+        <input type="number" id="age" placeholder="Enter age" required>
+        <input type="password" id="password" placeholder="Enter password" required>
+        <input type="checkbox" id="showPassword" title="Show Password">
+        <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+        <input type="checkbox" id="showConfirmPassword" title="Show Confirm Password">
+        <input type="submit" value="Register">
+    </form>
+    <h1>Registered Users</h1>
+    <table class="Table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="usersTableBody">
+            <!-- User rows will be inserted here -->
+        </tbody>
+    </table>
+
+    <h1>Search Users</h1>
+        <input type="text" id="SearchUsers" placeholder="Enter username">
+        <p id="foundUser">Found:</p>
+
+    <h1>FilterUsers</h1>
+    <input type="text" id="FilterUsersInput" placeholder="Enter Filter">
+    <p id="FilteredUsersResult">Filtered Users:</p>
+
+    <script src="script.js"></script>
+</body>
+<style>
+    .Top {
+        font-family: century gothic;
+    }
+    .Table {
+        border: 5px solid #ddd;
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+    }
+    .Table th, .Table td {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .Table th {
+        background-color: #f2f2f2;
+    }
+</style>
+</html>
